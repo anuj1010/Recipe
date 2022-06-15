@@ -111,15 +111,15 @@ const App = () => {
 
                             <ul className="nav__ul">
                                 <li>
-                                    <a href="#">Online</a>
+                                    <a href="https://github.com/anuj1010">Online</a>
                                 </li>
 
                                 <li>
-                                    <a href="#">Print</a>
+                                    <a href="https://github.com/anuj1010">Print</a>
                                 </li>
 
                                 <li>
-                                    <a href="#">Alternative Ads</a>
+                                    <a href="https://github.com/anuj1010">Alternative Ads</a>
                                 </li>
                             </ul>
                         </li>
@@ -129,27 +129,27 @@ const App = () => {
 
                             <ul className="nav__ul nav__ul--extra">
                                 <li>
-                                    <a href="#">Hardware Design</a>
+                                    <a href="https://github.com/anuj1010">Hardware Design</a>
                                 </li>
 
                                 <li>
-                                    <a href="#">Software Design</a>
+                                    <a href="https://github.com/anuj1010">Software Design</a>
                                 </li>
 
                                 <li>
-                                    <a href="#">Digital Signage</a>
+                                    <a href="https://github.com/anuj1010">Digital Signage</a>
                                 </li>
 
                                 <li>
-                                    <a href="#">Automation</a>
+                                    <a href="https://github.com/anuj1010">Automation</a>
                                 </li>
 
                                 <li>
-                                    <a href="#">Artificial Intelligence</a>
+                                    <a href="https://github.com/anuj1010">Artificial Intelligence</a>
                                 </li>
 
                                 <li>
-                                    <a href="#">IoT</a>
+                                    <a href="https://github.com/anuj1010">IoT</a>
                                 </li>
                             </ul>
                         </li>
@@ -159,15 +159,15 @@ const App = () => {
 
                             <ul className="nav__ul">
                                 <li>
-                                    <a href="#">Privacy Policy</a>
+                                    <a href="https://github.com/anuj1010">Privacy Policy</a>
                                 </li>
 
                                 <li>
-                                    <a href="#">Terms of Use</a>
+                                    <a href="https://github.com/anuj1010">Terms of Use</a>
                                 </li>
 
                                 <li>
-                                    <a href="#">Sitemap</a>
+                                    <a href="https://github.com/anuj1010">Sitemap</a>
                                 </li>
                             </ul>
                         </li>
@@ -177,7 +177,7 @@ const App = () => {
                         <p>&copy; 2022 Something. All rights reserved.</p>
 
                         <div className="legal__links">
-                            <span>Made by <span className="heart">Anuj</span> remotely from Anywhere</span>
+                            <span>Made by <span className="heart"><a href="https://github.com/anuj1010">Anuj</a></span> remotely from Anywhere</span>
                         </div>
                     </div>
                 </footer>
