@@ -29,7 +29,7 @@ const App = () => {
     };
     useEffect(() => {
         homeRecipe();
-    }, [],homeRecipe());
+    },homeRecipe());
 
     return (
         <>
