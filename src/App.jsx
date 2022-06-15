@@ -15,7 +15,7 @@ const App = () => {
 
     var url = `https://api.edamam.com/search?q=${ingridient}&app_id=${appId}&app_key=${appKey}&from=0&to=30&health=alcohol-free`;
     var homeUrl = `https://api.edamam.com/search?q=paneer&app_id=${appId}&app_key=${appKey}&from=0&to=18&health=alcohol-free`;
-   
+
     async function getRecipe() {
         const recipe = await Axios.get(url);
         setRecipes(recipe.data.hits);
@@ -42,12 +42,12 @@ const App = () => {
             <div className="app">
                 <div className="header">
                     <h1 className="main_heading">Recipe Maniaaa</h1>
-                    <img className="icon" src="" alt="Icon" />
+                    <img className="icon" src={require("./images/salad.png")} alt="Icon" />
                 </div>
 
                 <div className="search_container">
                     <p className="search_tagline">The variety on your plate...</p>
-                    
+
                     <form className="search_form" onSubmit={onSubmit}>
                         <p className="search_heading">Search your Recipe</p>
                         <input
@@ -74,10 +74,10 @@ const App = () => {
                 </div> : ""}
                 <div className="recipe_container">
                     {
-                        recipes.map((recipe,indx) => {
-                            return <RecipeTile 
-                            recipe={recipe}
-                            key={indx}
+                        recipes.map((recipe, indx) => {
+                            return <RecipeTile
+                                recipe={recipe}
+                                key={indx}
                             />
                         }
                         )}
@@ -86,15 +86,101 @@ const App = () => {
                     <p className="home_heading">Where our expertise is still a family tradition.</p>
                     <div className="recipe_container">
                         {
-                            homeDisplay.map((recipe,indx) => {
+                            homeDisplay.map((recipe, indx) => {
                                 return <RecipeTile recipe={recipe} key={indx} />
                             })}
                     </div>
                 </div>
             </div>
-            <div className="footer">
+                <footer className="footer">
+                    <div className="footer__addr">
+                        <h1 className="footer__logo">Something</h1>
 
-            </div>
+                        <h2>Contact</h2>
+
+                        <address>
+                            5534 Somewhere In. The World 22193-10212
+
+                                <a className="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+                        </address>
+                    </div>
+
+                    <ul className="footer__nav">
+                        <li className="nav__item">
+                            <h2 className="nav__title">Media</h2>
+
+                            <ul className="nav__ul">
+                                <li>
+                                    <a href="#">Online</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Print</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Alternative Ads</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li className="nav__item nav__item--extra">
+                            <h2 className="nav__title">Technology</h2>
+
+                            <ul className="nav__ul nav__ul--extra">
+                                <li>
+                                    <a href="#">Hardware Design</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Software Design</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Digital Signage</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Automation</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Artificial Intelligence</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">IoT</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li className="nav__item">
+                            <h2 className="nav__title">Legal</h2>
+
+                            <ul className="nav__ul">
+                                <li>
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Terms of Use</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Sitemap</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div className="legal">
+                        <p>&copy; 2022 <a href="https://github.com/anuj1010">Anuj</a>. All rights reserved.</p>
+
+                        <div className="legal__links">
+                            <span>Made with <span className="heart">♥</span> remotely from Anywhere</span>
+                        </div>
+                    </div>
+                </footer>
         </>
     );
 }
