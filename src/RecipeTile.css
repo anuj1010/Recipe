@@ -1,3 +1,29 @@
-.recipe_container{
-  
+.tiles{
+    display: flex;
+    flex-direction: column;
+    margin:15px;
+    text-align: center;
+    align-items: center;
+}
+.tile_image{
+ height: 230px;
+ width: 250px;
+ border-radius: 4px;
+ object-fit: cover;
+ 
+}
+.tile_title{
+ font-size: 20px;
+ max-width: 245px;
+ margin-bottom: 10px;
+}
+.recipe_button{
+    text-decoration: none;
+    background-color: rgb(95, 235, 95);
+    color:black;
+    padding:8px;
+    border-radius: 4px;
+}
+.recipe_button:hover{
+    transform: scale(1.2);
 }
