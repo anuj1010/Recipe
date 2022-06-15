@@ -177,7 +177,7 @@ const App = () => {
                         <p>&copy; 2022 Something. All rights reserved.</p>
 
                         <div className="legal__links">
-                            <span>Made by <span className="heart">♥<a href="https://github.com/anuj1010/">Anuj</a></span> remotely from Anywhere</span>
+                            <span>Made by <span className="heart">Anuj</span> remotely from Anywhere</span>
                         </div>
                     </div>
                 </footer>
