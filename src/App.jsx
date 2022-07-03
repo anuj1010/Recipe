@@ -3,7 +3,6 @@ import Home from "./Home";
 import Favorite from './Favorite';
 
 import { Route,Routes, BrowserRouter } from 'react-router-dom';
-import { alignProperty } from '@mui/material/styles/cssUtils';
  
 const App = () => {
     return (

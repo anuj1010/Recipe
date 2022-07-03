@@ -44,7 +44,7 @@ const Home = () => {
 
     useEffect(()=>{
          localStorage.setItem('favorite', JSON.stringify(favorite));
-    },[show]);
+    },[favorite]);
 
     // useEffect(()=>{
     //     setFavorite([]);
