@@ -39,12 +39,12 @@ const Home = () => {
 
     const show =(val)=>{
         setFavorite((old)=>{
-            return [...old, val]});  
+            return [...old, val]});      
     }
 
     useEffect(()=>{
          localStorage.setItem('favorite', JSON.stringify(favorite));
-    },[favorite]);
+    },[show]);
 
     // useEffect(()=>{
     //     setFavorite([]);

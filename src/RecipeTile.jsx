@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react'
 import FavoriteSharpIcon from '@mui/icons-material/FavoriteSharp';
 import "./RecipeTile.css";
 
