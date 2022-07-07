@@ -53,9 +53,7 @@
 .favorite{
   text-decoration: none;
 }
-.favorite:active{
-  color:blue;
-}
+
 
 .icon_header{
     margin-right: 25px;

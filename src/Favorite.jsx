@@ -6,20 +6,12 @@ import "./Home.css";
 
 const Favorite = () => {
     const [elements, setElements]=useState([]);
-    // const [arr, setArr] = useState();
- 
-    // const remove =(rem)=>{
-    // setArr(elements.filter((val)=>{
-    //     return val != rem;
-    //  }));
-    // }
 
     useEffect(()=>{
       const val = JSON.parse(localStorage.getItem('favorite'));
       setElements(val);
+      console.log(val);
   },[]);
-
-    
 
     return (
        <>
@@ -31,8 +23,9 @@ const Favorite = () => {
                 <RecipeTile
                     recipe={recipe}
                     key={indx}
-                    color={'red'}
-                /> )
+                    favorite={elements}
+                    // show={show}
+                />)
             })}
 
             </div>

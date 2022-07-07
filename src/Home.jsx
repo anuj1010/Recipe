@@ -4,6 +4,7 @@ import Axios from "axios";
 import RecipeTile from "./RecipeTile";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Favorite from "./Favorite";
 
 const Home = () => {
 
@@ -11,7 +12,12 @@ const Home = () => {
     const [recipes, setRecipes] = useState([]);
     const [recipeHeading, setRecipeHeading] = useState(false);
     const [homeDisplay, setHomeDisplay] = useState([]);
-    const [favorite, setFavorite]= useState([]);
+    const [favorite, setFavorite] = useState([]);
+
+    useEffect(()=>{
+         setFavorite(JSON.parse(localStorage.getItem('favorite')));
+         
+    },[])
 
     const appId = "93f08e6c";
     const appKey = "845926c2891a96f161565fa47ade63f0";
@@ -37,18 +43,25 @@ const Home = () => {
         setRecipeHeading(true);
     };
 
-    const show =(val)=>{
-        setFavorite((old)=>{
-            return [...old, val]});      
+    const show = (val) => {   
+        setFavorite((old) => {
+            return [...old, val]
+        });
+
     }
 
     useEffect(()=>{
-         localStorage.setItem('favorite', JSON.stringify(favorite));
-    },[favorite]);
+        localStorage.setItem('favorite', JSON.stringify(favorite));
+    });
 
-    // useEffect(()=>{
-    //     setFavorite([]);
-    // },[Home])
+//    useEffect(()=>{
+//     const data = JSON.parse(localStorage.getItem('favorite'));
+//     setFavorite(data);
+//    },[favorite]);
+
+     
+
+
 
     homeRecipe();
 
@@ -56,8 +69,8 @@ const Home = () => {
     return (
         <>
             <div className="app">
-                
-                <Header/>
+
+                <Header />
 
                 <div className="search_container">
                     <p className="search_tagline">The variety on your plate...</p>
@@ -92,8 +105,9 @@ const Home = () => {
                             return <RecipeTile
                                 recipe={recipe}
                                 key={indx}
-                                show = {show}
-                            />
+                                show={show}
+                                favorite ={favorite}
+                                />
                         }
                         )}
                 </div>
@@ -102,16 +116,17 @@ const Home = () => {
                     <div className="recipe_container">
                         {
                             homeDisplay.map((recipe, indx) => {
-                                return <RecipeTile 
-                                recipe={recipe} 
-                                key={indx}
-                                show = {show}
-                                 />
+                                return <RecipeTile
+                                    recipe={recipe}
+                                    key={indx}
+                                    show={show}
+                                    favorite ={favorite}                              
+                                />
                             })}
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </>
     );
 }
