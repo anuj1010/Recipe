@@ -11,11 +11,9 @@ function RecipeTile({ recipe, id, show, favorite }) {
 
 
 
-    useEffect(() => { 
-        
+    useEffect(() => {  
         // const val = JSON.parse(localStorage.getItem('favorite'));
         // setIsFav(val);
-
          if(favorite.includes(recipe)){
             setState(true);
          }

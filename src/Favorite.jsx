@@ -10,7 +10,6 @@ const Favorite = () => {
     useEffect(()=>{
       const val = JSON.parse(localStorage.getItem('favorite'));
       setElements(val);
-      console.log(val);
   },[]);
 
     return (
