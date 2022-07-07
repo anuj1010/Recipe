@@ -17,7 +17,7 @@ function RecipeTile({ recipe, id, show, favorite }) {
          if(favorite.includes(recipe)){
             setState(true);
          }
-    },[favorite]);
+    },[favorite,recipe]);
 
 
 
