@@ -39,7 +39,7 @@ const Home = () => {
       setHomeDisplay(homeresult);
     }
     homeRecipe();
-  }, []);
+  }, [homeUrl]);
 
   const onSubmit = (e) => {
     e.preventDefault();
