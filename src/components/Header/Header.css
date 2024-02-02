@@ -75,6 +75,7 @@
 @media (max-width: 500px) {
   .navBar {
     padding: 10px 10px;
+    width: 100%;
   }
   .logo {
     width: 80px;
@@ -87,7 +88,7 @@
   }
   .navMenu {
     gap: 40px;
-    margin-left: 105px;
+    margin-left: 50px;
   }
 }
 

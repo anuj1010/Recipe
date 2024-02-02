@@ -82,12 +82,12 @@
   gap: 20px;
   justify-content: center;
   background-color: #e8f9fd;
-  padding: 0px 125px;
+  padding: 10px 125px;
 }
 .home_container {
   text-align: center;
-  width: 100vw;
-  padding: 15px;
+  width: 100%;
+  background-color: #e8f9fd;
 }
 .banner_container {
   display: flex;
@@ -136,7 +136,7 @@
   }
   .recipe_container {
     gap: 20px;
-    padding: 0px 70px;
+    padding: 10px 70px;
   }
   .recipe_heading {
     font-size: 22px;
@@ -171,7 +171,7 @@
   }
   .recipe_container {
     gap: 10px;
-    padding: 0px 40px;
+    padding: 10px 40px;
   }
   .recipe_heading {
     font-size: 20px;
@@ -181,6 +181,7 @@
 @media (max-width: 500px) {
   .search_container {
     height: 200px;
+    width: 100%;
   }
   .search_tagline {
     font-size: 14px;
@@ -217,5 +218,9 @@
   .recipe_container {
     gap: 10px;
     grid-template-columns: 1fr 1fr;
+  }
+  .recipe_container {
+    gap: 10px;
+    padding: 10px 20px;
   }
 }
