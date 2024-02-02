@@ -107,7 +107,7 @@ const Home = () => {
             All Recipes related to {ingridient} are shown below.
           </div>
         ) : (
-          ""
+          <div className="displayNone"></div>
         )}
         <div className="recipe_container">
           {recipes.map((recipe, indx) => {
